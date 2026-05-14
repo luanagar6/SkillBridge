@@ -115,13 +115,7 @@ function Nav({page,setPage}){
       background:"rgba(7,7,26,0.88)",backdropFilter:"blur(18px)",
       borderBottom:"1px solid var(--bdr)",display:"flex",alignItems:"center",
       justifyContent:"space-between",padding:"0 28px"}}>
-      <div style={{display:"flex",alignItems:"center",gap:8,cursor:"pointer"}} onClick={()=>setPage("home")}>
-        <div style={{width:30,height:30,borderRadius:8,background:"linear-gradient(135deg,var(--a1),var(--a2))",
-          display:"flex",alignItems:"center",justifyContent:"center",fontSize:15}}>⚡</div>
-        <span style={{fontFamily:"var(--fd)",fontWeight:800,fontSize:17,letterSpacing:"-0.5px"}}>
-          Skill<span style={{color:"var(--a1)"}}>Bridge</span>
-        </span>
-      </div>
+      
       <div style={{display:"flex",gap:2}}>
         {links.map(([id,label])=>(
           <button key={id} onClick={()=>setPage(id)} style={{
